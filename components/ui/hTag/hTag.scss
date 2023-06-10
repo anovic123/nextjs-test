@@ -3,6 +3,9 @@
   font-weight: 500;
   font-size: 1.925rem;
   line-height: 1.2;
+  @media (max-width: 1024px) {
+    font-size: 1.7rem;
+  }
 }
 
 .h2 {
