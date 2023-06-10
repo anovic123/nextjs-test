@@ -33,12 +33,6 @@ li {
   list-style-type: none;
 }
 
-.wrapper {
-  min-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -48,8 +42,17 @@ li {
     padding: 0 2rem;
   }
 }
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .body {
   width: 100%;
+  position: relative;
   @media (min-width: 1024px) {
     width: calc(100% - 18.75rem);
   }
