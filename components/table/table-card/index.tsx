@@ -51,8 +51,8 @@ export const TableCard: FC<TableCardProps> = ({
       <td>
         <BiDotsHorizontalRounded />
       </td>
-      <td className="card-actions">
-        <BsChevronRight />
+      <td>
+        <BsChevronRight size={20} className="card-actions" />
       </td>
     </tr>
   );
