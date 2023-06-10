@@ -38,6 +38,7 @@ li {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   @media (min-width: 744px) {
     padding: 0 2rem;
   }
@@ -64,7 +65,10 @@ main {
 }
 
 .cabinet {
-  margin-bottom: 20px;
+  @media (max-width: 1024px) {
+    margin-bottom: 3.1rem;
+  }
+  margin-bottom: 1.25rem;
 }
 
 .cabinet-title {
