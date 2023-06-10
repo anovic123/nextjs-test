@@ -1,6 +1,7 @@
 .card-col {
   height: 7.9375rem;
   position: relative;
+  
   &:not(:last-child):after {
     content: '';
     position: absolute;

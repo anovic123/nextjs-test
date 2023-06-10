@@ -3,6 +3,9 @@
   padding: 2rem 0;
   gap: 0.625rem;
   width: 100%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 
   .footer-wrapper {
     display: flex;

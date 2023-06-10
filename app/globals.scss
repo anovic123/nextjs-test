@@ -63,3 +63,21 @@ main {
 .cabinet {
   margin-bottom: 20px;
 }
+
+.cabinet-title {
+  svg {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3125rem;
+    padding: 10px;
+    svg {
+      display: block;
+      font-size: 1.875rem;
+      color: #0074fc;
+    }
+  }
+}
