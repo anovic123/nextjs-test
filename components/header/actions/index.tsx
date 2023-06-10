@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { MdOutlineLanguage } from 'react-icons/md';
 import { RxExit } from 'react-icons/rx';
 import { FC } from 'react';
+import { LanguageBtn } from '@/components/ui/language-btn';
 
 interface HeaderActionsProps {}
 
@@ -12,10 +12,7 @@ export const HeaderActions: FC<HeaderActionsProps> = ({}) => {
       <Link href="#">
         <Button btnStyle="WHITE">Создать кампанию</Button>
       </Link>
-      <Link href="#" className="actions-btn">
-        <MdOutlineLanguage size={28} />
-        Русский
-      </Link>
+      <LanguageBtn />
       <Link href="#" className="actions-btn">
         <RxExit size={24} />
       </Link>

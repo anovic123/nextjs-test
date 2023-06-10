@@ -1,0 +1,28 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(22, 73, 116, 0.06);
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-top: 1.3rem;
+  .filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #333333;
+    padding: 0.4em 1rem;
+    font-size: 1rem;
+    line-height: 1.33;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    &.filterActive {
+      font-weight: 500;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);
+    }
+  }
+}

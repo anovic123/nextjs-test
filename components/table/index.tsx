@@ -7,19 +7,27 @@ interface TableProps {
   data: any;
 }
 
+const tableTop = [
+  'Кампания',
+  'Креативы',
+  'Место проведения',
+  'Локации',
+  'Транспорт',
+  'Показ',
+  'Бюджет',
+];
+
 export const Table: FC<TableProps> = ({ data }) => {
-  console.log("🚀 ~ file: index.tsx:11 ~ data:", data)
+  console.log('🚀 ~ file: index.tsx:11 ~ data:', data);
   return (
     <table className="table">
       <thead>
         <tr className="table-top">
-          <th>Кампания</th>
-          <th>Креативы</th>
-          <th>Место проведения</th>
-          <th>Локации</th>
-          <th>Транспорт</th>
-          <th>Показ</th>
-          <th>Бюджет</th>
+          {tableTop.map((el) => (
+            <th className="table-title" key={el}>
+              {el}
+            </th>
+          ))}
         </tr>
       </thead>
       <tbody>

@@ -1,12 +1,21 @@
-.white {
+.white-btn {
   background-color: transparent;
   color: #0074fc;
   border: 0.5px solid rgba(22, 73, 116, 0.24);
   position: relative;
   z-index: 1;
-  transition: all 0.3s ease 0s;
   &:hover {
     color: #025abe;
+  }
+}
+
+.outline-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0 !important;
+  min-height: 0 !important;
+  &:hover {
+    color: #333333;
   }
 }
 
@@ -15,11 +24,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   font-size: 0.9375rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.3125rem 0.9375rem;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
+  color: #0074fc;
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.3s ease;

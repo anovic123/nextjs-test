@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Sidebar } from '@/components/sidebar';
 
@@ -12,13 +13,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <Header />
         <div className="wrapper">
-          <div className="container">
-            <Sidebar />
-            <div className="body">{children}</div>
-            {/* Footer */}
-          </div>
+          <Header />
+          <main>
+            <div className="container">
+              <Sidebar />
+              <div className="body">{children}</div>
+            </div>
+          </main>
+          <Footer />
         </div>
       </body>
     </html>

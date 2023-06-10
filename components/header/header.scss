@@ -1,12 +1,9 @@
 .header {
   position: relative;
   z-index: 10;
-  padding: 1.8rem 0;
+  height: 5.6875rem;
   border-bottom: 0.5px solid rgba(22, 73, 116, 0.24);
   margin-bottom: 1.95rem;
-  @media (min-width: 1024px) {
-    padding: 2.5rem 0;
-  }
   .container {
     display: flex;
     align-items: center;
@@ -14,23 +11,26 @@
     max-width: 1400px;
     margin: 0 auto;
     @media (min-width: 744px) {
-      padding: 0 2rem;
+      padding: 1.5rem 2rem;
     }
   }
   .actions {
     display: flex;
     align-items: center;
-    gap: 1.3125rem;
+    gap: 1.5rem;
     .actions-btn {
       display: flex;
       align-items: center;
       gap: 0.1875rem;
       cursor: pointer;
-      color: #333333;
+      color: #4e697e;
       transition: all 0.3s ease;
       margin-left: 5px;
       &:hover {
         color: #186ccc;
+      }
+      svg {
+        color: #0074fc;
       }
     }
   }

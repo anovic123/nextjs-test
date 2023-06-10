@@ -12,8 +12,8 @@ export const Header = () => {
           <Image
             src="https://static.biterika.team/brobooster/assets/images/logo.svg"
             width={236}
-            height={33}
-            alt="Logo"
+            height={34}
+            alt="logo"
           />
         </Link>
         <HeaderActions />

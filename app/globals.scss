@@ -1,4 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:,regular,500,600,700,800,900);
+@font-face {
+  font-family: 'NormsPro-Medium';
+  src: url('../fonts/TTNormsPro-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NormsPro-Regular';
+  src: url('../fonts/TTNormsPro-Regular.woff2') format('woff2');
+}
 
 * {
   padding: 0;
@@ -7,8 +15,9 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'NormsPro-Regular', sans-serif;
   min-width: 320px;
+  font-weight: 400;
   color: #333333;
   overflow-x: hidden;
   @media (min-width: 744px) {
@@ -24,6 +33,12 @@ li {
   list-style-type: none;
 }
 
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -34,5 +49,10 @@ li {
   }
 }
 .body {
-  width: calc(100% - 30rem);
+  width: calc(100% - 18.75rem);
+}
+
+main {
+  flex-direction: column;
+  flex: 1 1 auto;
 }

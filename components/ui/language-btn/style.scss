@@ -1,0 +1,15 @@
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+  cursor: pointer;
+  color: #4e697e;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+  &:hover {
+    color: #186ccc;
+  }
+  svg {
+    color: #0074fc;
+  }
+}

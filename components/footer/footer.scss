@@ -1,0 +1,29 @@
+.footer {
+  border-top: 0.5px solid rgba(22, 73, 116, 0.24);
+  padding: 2rem 0;
+  gap: 0.625rem;
+  width: 100%;
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    @media (min-width: 744px) {
+      padding: 0 2rem;
+    }
+  }
+  .footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.925rem;
+    a {
+      color: #333333;
+      &:hover {
+        color: rgb(8, 109, 241);
+      }
+    }
+  }
+}
