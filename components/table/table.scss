@@ -1,10 +1,13 @@
+.table-container {
+  overflow-y: auto;
+}
+
 .table {
   width: 100%;
   border: 0.0625rem solid #c7d3de;
   border-radius: 0.625rem;
   margin-top: 1.25rem;
   padding: 0 0.7125rem 0 0.7125rem;
-  overflow-y: auto;
 }
 
 .table-top {
@@ -12,7 +15,7 @@
 }
 
 .table-title {
-  padding: 1.3rem 0 0.8rem 0;
+  padding: 1.3rem 0.3rem 0.8rem 0.3rem;
   color: #4e697e;
   font-weight: 400;
   font-size: 1.0625rem;

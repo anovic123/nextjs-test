@@ -1,7 +1,8 @@
 .card-col {
   height: 7.9375rem;
   position: relative;
-  
+  overflow: auto;
+
   &:not(:last-child):after {
     content: '';
     position: absolute;
@@ -11,42 +12,55 @@
     height: 0.0625rem;
     background-color: #c7d3de;
   }
-
-  .card-title {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: 'NormsPro-Medium';
-    cursor: pointer;
-  }
-  .card-id {
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.54;
-    color: #4e697e;
-    position: relative;
-    margin-bottom: 0.9375rem;
-    &:after {
-      content: '';
-      position: absolute;
-      right: -0.6125rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0.125rem;
-      height: 0.125rem;
-      border-radius: 50%;
-      background-color: #4e697e;
+  .card-info-container {
+    padding: 0 0.3rem;
+    .card-title {
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: 'NormsPro-Medium';
+      cursor: pointer;
+    }
+    .card-id {
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 1.54;
+      color: #4e697e;
+      position: relative;
+      margin-bottom: 0.9375rem;
+      &:after {
+        content: '';
+        position: absolute;
+        right: -0.6125rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.125rem;
+        height: 0.125rem;
+        border-radius: 50%;
+        background-color: #4e697e;
+      }
+    }
+    .card-date {
+      margin-left: 1.0625rem;
+      font-size: 0.9rem;
+      color: #4e697e;
     }
   }
-  .card-date {
-    margin-left: 1.0625rem;
-    font-size: 0.9rem;
-    color: #4e697e;
+  .card-img-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 0.3rem;
   }
+
   .card-img {
     margin-right: 0.1875rem;
     border-radius: 0.3125rem;
+    flex-shrink: 0;
+    min-width: 48px;
+    height: 72px;
   }
+
   .card-info {
+    padding: 0 0.3rem;
     font-size: 1rem;
   }
   .card-actions {

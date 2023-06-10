@@ -19,21 +19,23 @@ const tableTop = [
 
 export const Table: FC<TableProps> = ({ data }) => {
   return (
-    <table className="table">
-      <thead>
-        <tr className="table-top">
-          {tableTop.map((el) => (
-            <th className="table-title" key={el}>
-              {el}
-            </th>
+    <div className="table-container">
+      <table className="table">
+        <thead>
+          <tr className="table-top">
+            {tableTop.map((el) => (
+              <th className="table-title" key={el}>
+                {el}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data?.map((el: any, i: number) => (
+            <TableCard key={`table-card-${i}`} {...el} />
           ))}
-        </tr>
-      </thead>
-      <tbody>
-        {data?.map((el: any, i: number) => (
-          <TableCard key={`table-card-${i}`} {...el} />
-        ))}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   );
 };

@@ -32,16 +32,18 @@ export const TableCard: FC<TableCardProps> = ({
 }) => {
   return (
     <tr className="card-col">
-      <td>
+      <td className="card-info-container">
         <h3 className="card-title">{title}</h3>
         <span className="card-id">ID {id}</span>
         <span className="card-date">12 янв 2023 в 14:45</span>
         <TableProgress status={state} />
       </td>
       <td>
-        {photos.map((el: string, i: number) => (
-          <Image src={el} alt="Img" key={i} height={72} width={48} className="card-img" />
-        ))}
+        <div className="card-img-container">
+          {photos.map((el: string, i: number) => (
+            <Image src={el} alt="Img" key={i} height={72} width={48} className="card-img" />
+          ))}
+        </div>
       </td>
       <td className="card-info">{city}</td>
       <td className="card-info">{locations}</td>
