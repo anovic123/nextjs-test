@@ -25,14 +25,14 @@ export const TableProgress: FC<TableProgressProps> = ({ status }) => {
       case 'paused':
         return (
           <div className={classes}>
-            <AiOutlinePause color="orange" />
+            <AiOutlinePause size={16} color="orange" />
             Приостановлена
           </div>
         );
       default:
         return (
           <div className={classes}>
-            <AiOutlinePause color="orange" />
+            <AiOutlinePause size={16} color="orange" />
             Отклонен
           </div>
         );
