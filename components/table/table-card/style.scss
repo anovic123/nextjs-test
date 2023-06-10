@@ -1,6 +1,7 @@
 .card-col {
   height: 7.9375rem;
   padding: 1.3rem 0.5rem 1.2rem;
+  border-bottom: 0.0625rem solid #c7d3de;
   .card-title {
     font-size: 1rem;
     font-weight: 500;
@@ -36,7 +37,7 @@
     border-radius: 0.3125rem;
   }
   .card-info {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .card-actions {
     margin-left: 10px;
