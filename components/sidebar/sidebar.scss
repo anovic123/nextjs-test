@@ -9,6 +9,16 @@
   padding-right: 3rem;
   height: auto;
   margin: 0;
+  .sidebar-container {
+    @media (min-width: 1024px) {
+      border-top: none;
+      position: sticky;
+      top: 3rem;
+      right: 0;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+  }
   .balance {
     padding: 15px 16px;
     border: 0.5px solid rgba(22, 73, 116, 0.24);

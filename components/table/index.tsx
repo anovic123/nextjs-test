@@ -18,7 +18,6 @@ const tableTop = [
 ];
 
 export const Table: FC<TableProps> = ({ data }) => {
-  console.log('🚀 ~ file: index.tsx:11 ~ data:', data);
   return (
     <table className="table">
       <thead>

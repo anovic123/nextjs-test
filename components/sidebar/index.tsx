@@ -9,8 +9,10 @@ interface SidebarProps {}
 export const Sidebar: FC<SidebarProps> = ({}) => {
   return (
     <aside className="sidebar">
-      <Balance />
-      <Menu />
+      <div className="sidebar-container">
+        <Balance />
+        <Menu />
+      </div>
     </aside>
   );
 };
