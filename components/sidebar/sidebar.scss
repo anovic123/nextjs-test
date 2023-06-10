@@ -18,6 +18,9 @@
       width: 100%;
       transition: all 0.3s ease;
     }
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
   .balance {
     padding: 15px 16px;

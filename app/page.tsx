@@ -5,16 +5,16 @@ import { notFound } from 'next/navigation';
 
 export interface Campaign {
   campaigns: {
-    id: number;
-    title: string;
-    city: string;
-    state: string;
-    locations: number;
-    transports: number;
-    display: string;
-    budget: number;
-    photos: string[];
-  };
+    id: number
+    title: string
+    city: string
+    state: string
+    locations: number
+    transports: number
+    display: string
+    budget: number
+    photos: string[]
+  }
 }
 
 async function Home() {

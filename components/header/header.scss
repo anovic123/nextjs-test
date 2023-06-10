@@ -4,6 +4,9 @@
   height: 5.6875rem;
   border-bottom: 0.5px solid rgba(22, 73, 116, 0.24);
   margin-bottom: 1.95rem;
+  @media (max-width: 1024px) {
+    display: none;
+  }
   .container {
     display: flex;
     align-items: center;
