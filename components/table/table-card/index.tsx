@@ -43,15 +43,15 @@ export const TableCard: FC<TableCardProps> = ({
           <Image src={el} alt="Img" key={i} height={72} width={48} className="card-img" />
         ))}
       </td>
-      <td>{city}</td>
-      <td>{locations}</td>
-      <td>{transports}</td>
-      <td>{display}</td>
-      <td>{budget}</td>
+      <td className="card-info">{city}</td>
+      <td className="card-info">{locations}</td>
+      <td className="card-info">{transports}</td>
+      <td className="card-info">{display}ч</td>
+      <td className="card-info">{budget}$</td>
       <td>
         <BiDotsHorizontalRounded />
       </td>
-      <td>
+      <td className="card-actions">
         <BsChevronRight />
       </td>
     </tr>

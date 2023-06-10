@@ -5,6 +5,7 @@
     font-size: 1rem;
     font-weight: 500;
     font-family: 'NormsPro-Medium';
+    cursor: pointer;
   }
   .card-id {
     font-weight: 400;
@@ -26,12 +27,26 @@
     }
   }
   .card-date {
-    margin-left: 10px;
+    margin-left: 1.0625rem;
     font-size: 0.9rem;
     color: #4e697e;
   }
   .card-img {
     margin-right: 0.1875rem;
     border-radius: 0.3125rem;
+  }
+  .card-info {
+    font-size: 1.1rem;
+  }
+  .card-actions {
+  }
+  svg {
+    color: #666;
+    cursor: pointer;
+    font-size: 1.4375rem;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: #000;
+    }
   }
 }
