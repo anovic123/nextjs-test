@@ -1,11 +1,13 @@
 .sidebar {
   border-top: none;
   @media (min-width: 1024px) {
+    position: static;
     z-index: 9;
     top: 0;
     right: 0;
     width: 18.75rem;
     padding-right: 3rem;
+    height: auto !important;
   }
   .sidebar-container {
     @media (min-width: 1024px) {
